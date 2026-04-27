@@ -1,0 +1,23 @@
+[project]
+name = "massive-darkness-dice-assets"
+version = "0.1.0"
+description = "Generate printable Massive Darkness 2 Hellscape dice assets."
+requires-python = ">=3.11"
+dependencies = [
+    "mapbox-earcut",
+    "networkx",
+    "numpy",
+    "pillow",
+    "shapely",
+    "trimesh",
+]
+
+[project.scripts]
+md2-dice = "md2_dice.cli:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
