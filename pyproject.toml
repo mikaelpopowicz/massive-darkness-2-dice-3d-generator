@@ -8,6 +8,7 @@ dependencies = [
     "networkx",
     "numpy",
     "pillow",
+    "rich>=15.0.0",
     "shapely",
     "trimesh",
 ]
